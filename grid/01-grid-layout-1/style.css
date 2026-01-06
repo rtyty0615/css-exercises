@@ -9,6 +9,11 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(9, 100px);
+  gap: 10px;
+
 }
 
 .container div {
@@ -22,22 +27,27 @@ html {
 
 .header {
   background-color: #006157;
+  grid-area: 1 / 1 / 2 / 5;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-area: 2 / 1 / 8 / 2;
 }
 
 .nav {
   background-color: #642cde;
+  grid-area: 2 / 2 / 3 / 5;
 }
 
 .article {
   background-color: #7E1DC3;
+  grid-area: 3 / 2 / 8 / 5;
 }
 
 .footer {
   background-color: #393f4d;
+  grid-area: 8 / 1 / 9 / 5;
 }
 
 .article p {
